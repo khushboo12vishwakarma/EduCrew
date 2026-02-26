@@ -10,7 +10,6 @@ The platform integrates Large Language Model (LLM) capabilities, secure code exe
 ## 🤖 Multi-Agent AI Architecture
 
 EduCrew implements a modular **Multi-Agent AI Architecture** powered by Applied Natural Language Processing through Large Language Model (LLM) integration.
-
 Each intelligent agent is responsible for a specific academic domain, enabling structured, contextual, and task-oriented execution.
 
 ### 📚 Research Agent
@@ -154,12 +153,86 @@ The platform reduces academic workflow fragmentation and improves productivity t
 ## ⚙️ Installation Guide
 
 ### 🔹 Prerequisites
-- Python 3.9+
-- Node.js (v16+)
-- npm
-- Git
+
+Ensure the following are installed on your system:
+
+- Python 3.9 or higher  
+- Node.js (v16+ recommended)  
+- npm  
+- Git  
 
 ---
+
+### 🚀 Setup Steps
+
+```bash
+# ===============================
+# 1️⃣ Clone the Repository
+# ===============================
+
+git clone https://github.com/khushboo12vishwakarma/EduCrew.git
+cd EduCrew
+
+
+# ===============================
+# 2️⃣ Backend Setup (Django)
+# ===============================
+
+cd educrew-backend
+
+# Create Virtual Environment
+python -m venv venv
+
+# Activate Virtual Environment (Windows)
+venv\Scripts\activate
+
+# For Mac/Linux use:
+# source venv/bin/activate
+
+# Install Required Dependencies
+pip install -r requirements.txt
+
+# --------------------------------
+# Create a .env file inside the 
+# educrew-backend directory and add:
+#
+# PERPLEXITY_API_KEY=your_api_key
+# EMAIL_HOST_USER=your_email
+# EMAIL_HOST_PASSWORD=your_app_password
+# --------------------------------
+
+# Apply Database Migrations
+python manage.py migrate
+
+# Start Backend Server
+python manage.py runserver
+
+
+# ===============================
+# 3️⃣ Frontend Setup (React)
+# ===============================
+
+cd ../educrew-frontend
+
+# Install Frontend Dependencies
+npm install
+
+# Start Frontend Development Server
+npm start
+```
+
+---
+
+### 🌐 Application Access
+
+After successful setup:
+
+- Frontend → http://localhost:3000  
+- Backend API → http://127.0.0.1:8000  
+
+---
+  
+
 
 ### 🚀 Setup Steps
 
