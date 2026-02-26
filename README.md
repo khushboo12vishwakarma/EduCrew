@@ -1,4 +1,4 @@
-# 🚀 EduCrew – AI-Powered Learning & Project Assistance Platform  
+# 🚀 EduCrew – AI-Powered Learning Platform  
 
 EduCrew is a Full-Stack AI-powered educational platform designed to enhance student productivity, streamline academic workflows, and automate project development using intelligent Multi-Agent AI architecture.
 
