@@ -6,20 +6,6 @@ It integrates LLM-based content generation, secure code execution, plagiarism de
 
 ---
 
-## 📌 Problem Statement
-
-Students today face:
-- Information overload  
-- Disconnected academic tools  
-- Poor study planning  
-- Manual progress tracking  
-- Increased stress and missed deadlines  
-Most platforms solve isolated problems (coding help, plagiarism detection, research tools) but fail to support the complete academic lifecycle:
-Research → Learning → Coding → Planning → Review → Submission  
-EduCrew solves this by providing a coordinated AI-powered academic ecosystem.
-
----
-
 ## 🏗 System Architecture
 
 Frontend (React.js)  
