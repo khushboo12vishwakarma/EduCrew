@@ -1,56 +1,47 @@
-# 🚀 EduCrew – AI-Powered Learning Platform  
+# 🚀 EduCrew – AI-Powered Multi-Agent Academic Assistance Platform
 
-EduCrew is a Full-Stack AI-powered educational platform designed to enhance student productivity, streamline academic workflows, and automate project development using intelligent Multi-Agent AI architecture.
+EduCrew is a Full-Stack AI-powered educational platform designed to enhance student productivity, learning efficiency, and project development through intelligent automation and AI-driven tools.
 
-It integrates LLM-based content generation, secure code execution, plagiarism detection, structured project planning, and learning analytics into one unified ecosystem.
-
----
-
-## 🏗 System Architecture
-
-Frontend (React.js)  
-⬇  
-Django REST APIs  
-⬇  
-AI Processing Layer (LLM + Similarity Engine)  
-⬇  
-Secure Sandbox & Celery Workers  
-⬇  
-Database (SQLite → PostgreSQL Scalable)
+The platform integrates Large Language Model (LLM) capabilities, secure code execution, plagiarism detection, structured project planning, and learning analytics into a unified academic workflow system.
 
 ---
+
 
 ## 🤖 Multi-Agent AI Architecture
 
-EduCrew leverages Applied Natural Language Processing (NLP) through Large Language Model (LLM) integration to implement a modular multi-agent AI architecture. Each specialized agent handles a specific academic domain, enabling structured, contextual, and intelligent task execution.
+EduCrew implements a modular **Multi-Agent AI Architecture** powered by Applied Natural Language Processing through Large Language Model (LLM) integration.
+
+Each intelligent agent is responsible for a specific academic domain, enabling structured, contextual, and task-oriented execution.
 
 ### 📚 Research Agent
 - Topic exploration  
 - Research summarization  
-- Academic structuring  
+- Structured academic content organization  
 
 ### 🧠 Study Guidance Agent
 - Concept explanations  
 - Flashcards generation  
-- Flowcharts and notes  
-- Summaries  
+- Flowcharts and summaries  
+- Academic notes structuring  
 
 ### 💻 Code Intelligence Agent
-- AI-based code generation  
-- Debugging support  
-- Interview preparation  
+- AI-driven code generation  
+- Debugging and optimization support  
 - Code explanation  
+- Interview preparation assistance  
 
 ### 📅 Project Planning Agent
 - Converts complex projects into structured tasks  
-- Day-wise & week-wise scheduling  
+- Day-wise and week-wise scheduling  
 - Progress tracking  
-- Email reminders (Celery-based)  
+- Email reminders (Celery-based asynchronous processing)  
 
 ### 📊 Quality Review Agent
 - Plagiarism detection  
 - Similarity scoring  
 - Structured academic feedback  
+
+All agents operate within a unified backend architecture to deliver coordinated academic assistance.
 
 ---
 
@@ -59,50 +50,39 @@ EduCrew leverages Applied Natural Language Processing (NLP) through Large Langua
 ### 🔐 Authentication & Security
 - JWT-based authentication (SimpleJWT)
 - Secure password reset
-- Protected API routes
+- Protected REST APIs
 - Environment variable configuration (.env)
-
----
+- Docker-based secure execution
 
 ### 💻 AI Code Intelligence System
 - Code generation & debugging
 - Topic-based practice questions
-- Coding interview assistance
-- Secure Docker-based sandbox execution
-- Multi-language runtime support
-
----
+- Interview preparation support
+- Multi-language runtime execution
+- Secure Docker sandbox
 
 ### 🔍 Intelligent Plagiarism Detection
 - Web scraping-based similarity detection
 - Custom similarity engine
 - Structured similarity scoring
 
----
-
-### 📊 AI Code Quality Analyzer
+### 📊 Code Quality Analyzer
 - Structural evaluation
 - Performance suggestions
 - Readability analysis
 - Improvement recommendations
 
----
-
 ### 📚 Smart Learning Toolkit
-- Flashcards generation
-- Flowcharts & summaries
+- Flashcards & summary generation
+- Flowchart creation
 - Research paper recommendations
 - Academic content structuring
-
----
 
 ### 📅 AI Project Planner
 - Task breakdown system
 - Scheduling dashboard
 - Email reminders via Celery
 - Progress tracking analytics
-
----
 
 ### 📊 Dashboard & Analytics
 - Learning progress tracking
@@ -111,140 +91,49 @@ EduCrew leverages Applied Natural Language Processing (NLP) through Large Langua
 
 ---
 
+## 🏗 System Architecture
+
+Frontend (React.js)  
+⬇  
+Django REST API Layer  
+⬇  
+AI Processing Layer (LLM + Similarity Engine)  
+⬇  
+Docker Sandbox & Celery Task Queue  
+⬇  
+Database (SQLite / PostgreSQL scalable)
+
+---
+
 ## 🛠 Tech Stack
 
 ### 🎨 Frontend
-- React.js
-- Tailwind CSS
-- Context API
-- Axios
-- React Router
+- React.js  
+- Tailwind CSS  
+- Context API  
+- Axios  
+- React Router  
 
 ### ⚙️ Backend
-- Python
-- Django
-- Django REST Framework
-- JWT Authentication (SimpleJWT)
-- Celery (Asynchronous Task Processing)
+- Python  
+- Django  
+- Django REST Framework  
+- JWT Authentication (SimpleJWT)  
+- Celery (Asynchronous Task Processing)  
 
 ### 🤖 AI & NLP
-- Multi-Agent AI Architecture
-- Large Language Model (DeepSeek / Gemini)
-- NLP-based structured output generation
+- Large Language Model Integration (DeepSeek / Gemini)  
+- Applied NLP via LLM APIs  
+- AI-based code generation & summarization  
 
-
-### 🔐 Secure Code Execution
-- Docker-based sandbox
-- Isolated multi-language runtime
-- SQLite sandbox environment
+### 🧪 Secure Execution
+- Docker-based sandbox  
+- Multi-language runtime execution  
+- SQLite isolated execution environment  
 
 ### 🗄 Database
-- SQLite (Development)
-- PostgreSQL (Production Ready)
-
-### 📂 File Handling
-- PDF processing
-- PPTX generation (python-pptx)
-- File streaming APIs
-
-### 📧 Background Processing
-- Celery Scheduler
-- Email notification system
-
-### 🧰 Development Tools
-- Git & GitHub
-- VS Code
-- Postman
-- npm
-- pip
-
----
-
-## 🚀 Installation Guide
-
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/khushboo12vishwakarma/EduCrew.git
-cd EduCrew
-```
-
----
-
-## ⚙️ Backend Setup
-
-```bash
-cd educrew-backend
-python -m venv venv
-```
-
-### Activate Virtual Environment
-
-Windows:
-```bash
-venv\Scripts\activate
-```
-
-Mac/Linux:
-```bash
-source venv/bin/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Create `.env` File inside `educrew-backend`
-
-```
-PERPLEXITY_API_KEY=your_api_key
-EMAIL_HOST_USER=your_email
-EMAIL_HOST_PASSWORD=your_app_password
-```
-
-### Apply Migrations
-
-```bash
-python manage.py migrate
-```
-
-### Run Backend Server
-
-```bash
-python manage.py runserver
-```
-
----
-
-## 🎨 Frontend Setup
-
-```bash
-cd ../educrew-frontend
-npm install
-npm start
-```
-
----
-
-## 🔐 Security Implementation
-
-- Token-based authentication
-- Protected REST endpoints
-- Docker-based sandbox isolation
-- Environment variable protection
-- Secure code execution limits
-
----
-
-## 📈 Future Improvements
-
-- Kubernetes deployment
-- Redis caching
-- Advanced AI orchestration layer
-- Real-time collaboration features
-- AI-powered performance analytics
+- SQLite (Development)  
+- PostgreSQL (Production-ready scalable architecture)  
 
 ---
 
@@ -252,12 +141,55 @@ npm start
 
 EduCrew demonstrates:
 
-- Scalable AI system design  
-- Multi-agent architecture implementation  
-- Secure sandbox engineering  
-- Asynchronous background processing  
-- Applied NLP in academic automation  
-- Full-stack production-ready development  
+- Practical implementation of a Multi-Agent AI system  
+- Integration of LLM APIs in a real-world academic platform  
+- Secure sandbox-based code execution  
+- Asynchronous task processing using Celery  
+- Full-stack scalable architecture design  
+
+The platform reduces academic workflow fragmentation and improves productivity through intelligent automation.
 
 ---
+
+## ⚙️ Installation Guide
+
+### 🔹 Prerequisites
+- Python 3.9+
+- Node.js (v16+)
+- npm
+- Git
+
+---
+
+### 🚀 Setup Steps
+
+```bash
+# Clone Repository
+git clone https://github.com/khushboo12vishwakarma/EduCrew.git
+cd EduCrew
+
+# ================= Backend Setup =================
+cd educrew-backend
+python -m venv venv
+venv\Scripts\activate     # Windows
+# source venv/bin/activate   # Mac/Linux
+pip install -r requirements.txt
+
+# Create .env file inside educrew-backend and add:
+# PERPLEXITY_API_KEY=your_api_key
+# EMAIL_HOST_USER=your_email
+# EMAIL_HOST_PASSWORD=your_app_password
+
+python manage.py migrate
+python manage.py runserver
+
+# ================= Frontend Setup =================
+cd ../educrew-frontend
+npm install
+npm start
+```
+
+---
+
+
 
