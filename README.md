@@ -224,53 +224,53 @@ EduCrew demonstrates the practical implementation of a scalable AI-powered multi
 ---
 ## ⚙️ Installation
 
-# 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 git clone https://github.com/khushboo12vishwakarma/EduCrew.git
 cd EduCrew
 
 
-# =========================
-# 2️⃣ Backend Setup
-# =========================
+
+### 2️⃣ Backend Setup
+
 
 cd educrew-backend
 
-# Create Virtual Environment
+### Create Virtual Environment
 python -m venv venv
 
-# Activate Virtual Environment (Windows)
+### Activate Virtual Environment (Windows)
 venv\Scripts\activate
 
-# For Mac/Linux use:
-# source venv/bin/activate
+### For Mac/Linux use:
+### source venv/bin/activate
 
-# Install Required Dependencies
+### Install Required Dependencies
 pip install -r requirements.txt
 
 
-# Create .env file inside educrew-backend folder
-# Add the following inside .env file:
+### Create .env file inside educrew-backend folder
+### Add the following inside .env file:
 
-# PERPLEXITY_API_KEY=your_api_key
-# EMAIL_HOST_USER=your_email
-# EMAIL_HOST_PASSWORD=your_app_password
+### PERPLEXITY_API_KEY=your_api_key
+### EMAIL_HOST_USER=your_email
+### EMAIL_HOST_PASSWORD=your_app_password
 
 
-# Apply Database Migrations
+### Apply Database Migrations
 python manage.py migrate
 
-# Run Backend Server
+### Run Backend Server
 python manage.py runserver
 
 
-# =========================
-# 3️⃣ Frontend Setup
-# =========================
+
+### 3️⃣ Frontend Setup
+
 
 cd ../educrew-frontend
 
-# Install Frontend Dependencies
+### Install Frontend Dependencies
 npm install
 
-# Start Frontend Server
+### Start Frontend Server
 npm start
