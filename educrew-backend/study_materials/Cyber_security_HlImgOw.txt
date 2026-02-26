@@ -1,0 +1,33 @@
+Cyber security involves the technologies, processes, and practices designed to protect networks, computers, programs, and data from attack, damage, or unauthorized access. The core objective is to ensure the confidentiality, integrity, and availability (CIA triad) of digital information. 
+Fundamental Concepts
+Cyberspace: The virtual environment created by interconnected computer systems and networks.
+Vulnerability: A weakness or gap in a system that makes a cyber threat possible.
+Threat: A potential security incident or circumstance that could have a negative outcome for a system or network.
+Attack: The actual execution of a threat that exploits a vulnerability.
+Malware: A general term for malicious software, including viruses, worms, and Trojans, designed to disrupt or damage a user's computer. 
+The CIA Triad
+This model guides security policies and is built on three key principles: 
+Confidentiality: Ensuring that data is accessible only to authorized individuals or systems. This is often achieved through data encryption, two-factor authentication, and access controls.
+Integrity: Protecting information from being modified or tampered with by unauthorized parties. Measures include cryptographic checksums and file permissions.
+Availability: Making sure that authorized parties can access the information and systems when needed. This involves maintaining hardware, having data backups, and using firewalls to prevent disruptions like Denial-of-Service attacks. 
+Common Cyber Threats & Attacks
+Cyber threats are malicious activities that aim to steal data, break systems, or demand money. 
+Phishing: Fraudulent emails or messages that masquerade as trustworthy entities to trick users into revealing sensitive information.
+Ransomware: Malware that encrypts a victim's files and demands a ransom for their release.
+Malware: Harmful software like viruses, worms, and Trojan horses that infect and damage computer systems.
+Denial-of-Service (DoS/DDoS): Attacks designed to make a server or network resource unavailable by overwhelming it with traffic.
+Man-in-the-Middle (MitM) Attacks: Where an attacker secretly intercepts and potentially alters communication between two parties. 
+Types of Cyber Security
+Effective security involves layers of protection across an organization's IT infrastructure. 
+Network Security: Securing computer networks from intruders using tools like firewalls, VPNs, and intrusion prevention systems.
+Application Security: Keeping software and devices free of threats by using secure coding practices and regular vulnerability assessments.
+Information Security: Focused on protecting sensitive data (digital and physical) from unauthorized access, disclosure, or destruction.
+Cloud Security: Protecting data, applications, and infrastructure hosted on cloud platforms, often involving a shared responsibility model between the provider and customer.
+Endpoint Security: Safeguarding individual devices (laptops, phones, etc.) that connect to the network using antivirus software and encryption. 
+Best Practices for Individuals & Organizations
+Use strong, unique passwords and enable multi-factor authentication (MFA) whenever possible.
+Keep all software and operating systems up to date with the latest security patches.
+Be cautious of suspicious emails or links and avoid using unsecured public Wi-Fi networks for sensitive activities.
+Back up important data regularly to external drives or a secure offsite location.
+Use reputable antivirus/anti-malware software and activate a firewall.
+Stay informed about the latest cyber threats and security best practices

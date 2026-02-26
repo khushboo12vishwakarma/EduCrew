@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+env/
+venv/
+db.sqlite3
+celery_broker.sqlite
+media/
+.env
+
+# Node
+node_modules/
+build/
+
+# VS Code
+.vscode/
+
+# Zip
+*.zip
