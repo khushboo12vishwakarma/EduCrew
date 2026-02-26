@@ -22,7 +22,7 @@ Database (SQLite → PostgreSQL Scalable)
 
 ## 🤖 Multi-Agent AI Architecture
 
-EduCrew implements a modular multi-agent AI system where each agent handles a specialized academic domain:
+EduCrew leverages Applied Natural Language Processing (NLP) through Large Language Model (LLM) integration to implement a modular multi-agent AI architecture. Each specialized agent handles a specific academic domain, enabling structured, contextual, and intelligent task execution.
 
 ### 📚 Research Agent
 - Topic exploration  
