@@ -120,12 +120,6 @@ The result is a scalable, intelligent, and productivity-focused academic ecosyst
 
 ## 🛠 Tech Stack & Technologies Used
 
-### 💻 Programming Languages
-- Python
-- JavaScript
-- SQL
-- HTML5
-- CSS3
 
 ---
 
@@ -139,6 +133,7 @@ The result is a scalable, intelligent, and productivity-focused academic ecosyst
 ---
 
 ### ⚙️ Backend
+- Python
 - Django
 - Django REST Framework
 - JWT Authentication (SimpleJWT)
@@ -229,7 +224,53 @@ EduCrew demonstrates the practical implementation of a scalable AI-powered multi
 ---
 ## ⚙️ Installation
 
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/<your-github-username>/EduCrew.git
+### 1️⃣ Clone the Repository
+git clone https://github.com/khushboo12vishwakarma/EduCrew.git
 cd EduCrew
+
+
+### =========================
+### 2️⃣ Backend Setup
+### =========================
+
+cd educrew-backend
+
+### Create Virtual Environment
+python -m venv venv
+
+### Activate Virtual Environment (Windows)
+venv\Scripts\activate
+
+### For Mac/Linux use:
+### source venv/bin/activate
+
+### Install Required Dependencies
+pip install -r requirements.txt
+
+
+### Create .env file inside educrew-backend folder
+### Add the following inside .env file:
+
+### PERPLEXITY_API_KEY=your_api_key
+### EMAIL_HOST_USER=your_email
+### EMAIL_HOST_PASSWORD=your_app_password
+
+
+### Apply Database Migrations
+python manage.py migrate
+
+### Run Backend Server
+python manage.py runserver
+
+
+### =========================
+### 3️⃣ Frontend Setup
+### =========================
+
+cd ../educrew-frontend
+
+### Install Frontend Dependencies
+npm install
+
+### Start Frontend Server
+npm start
